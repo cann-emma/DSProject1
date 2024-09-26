@@ -1,11 +1,6 @@
 ## Software and Platform
-Software: R Studio(4.4.1) 
 
-
-Packages: tm, SentimentAnalysis, transforEmotions, ggpubbr, topicmodels, tidytext, dplyr
-
-
-Platforms: [Windows and Mac]
+This project was developed using R Studio (version 4.4.1), alongside several key packages: tm, SentimentAnalysis, transformEmotions, ggpubbr, topicmodels, tidytext, and dplyr to perform text mining, sentiment analysis, topic modeling, and data visualization. The project runs on both Windows and Mac platforms.
 
 ## Documentation Map:
 1. Data
