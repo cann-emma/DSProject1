@@ -2,7 +2,7 @@
 
 This project was developed using R Studio (version 4.4.1), alongside several key packages: tm, SentimentAnalysis, transformEmotions, ggpubbr, topicmodels, tidytext, and dplyr to perform text mining, sentiment analysis, topic modeling, and data visualization. The project runs on both Windows and Mac platforms.
 
-## Documentation Map:
+## Documentation Map
 1. Data
    
      **[Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_released.csv)**
