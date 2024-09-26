@@ -1,6 +1,10 @@
 ## Software and Platform
 Software: R Studio(4.4.1) 
+
+
 Packages: [tm, SentimentAnalysis, transforEmotions, ggpubbr, topicmodels, tidytext, dplyr] 
+
+
 Platforms: [Windows and Mac]
 
 ## Documentation Map:
