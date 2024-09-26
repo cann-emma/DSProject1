@@ -2,15 +2,23 @@
 Software: R Studio(4.4.1) 
 
 
-Packages: [tm, SentimentAnalysis, transforEmotions, ggpubbr, topicmodels, tidytext, dplyr] 
+Packages: tm, SentimentAnalysis, transforEmotions, ggpubbr, topicmodels, tidytext, dplyr
 
 
 Platforms: [Windows and Mac]
 
 ## Documentation Map:
-1. Our project utilizes a dataset titled 'ts_discography_clean.csv', which contains a cleaned version of Taylor Swift's complete distography, which we also have under the file titled, 'ts_discography_released.csv' The dataset has been refined to eliminate multiple releases of the same song. This step was necessary due to the unique nature of her distography, where many songs have been re-released as part of her protest for artist rights, following the sale of her original masters without her consent. For the purpose of oour analysis, we have excluded these re-releases to ensure that the sentiment analysis relfects the emotional tone adn lyrical intent at the time of the songs' original release, providing a more accurate representation of her evolving mindset.  
-2. [script]
-3. [output]
+1. Data
+     **[Original Dataset]**(https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_released.csv)
+     **[Clean Dataset]**
+     **[Final Dataset]**(https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv)
+   
+2. Scripts
+     **[Processing Script]**(https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-DataCleaning.R)
+     **[Analysis Script]** (https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-Analysis.R)
+     **[Master Script]**(https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyricAnalysis.R)
+   
+3. Output
 
 ## Reproducing Results
 To reproduce this work:
@@ -31,3 +39,24 @@ Use results and generated themes from topic modeling process as classes in zero-
 
 Merge results from sentiment analysis and zero-shot classification to clean dataset. This will be dataset to organize mean comparisons.
 
+
+
+## References
+
+[1] Data Centric Inc., “Tutorial on topic modelling in r tutorial,” YouTube, Nov. 21, 2021. 
+https://www.youtube.com/watch?v=3ozjwHWf-6E (accessed Sep. 26, 2024).
+
+[2] Early Chirp, “Exploring the Evolution of Taylor Swift Lyrics | Early Chirp | Medium,” Medium, May 06, 2024.
+https://blog.earlychirp.com/taylor-swift-lyrics-58ae00d30a29
+
+[3] S. Elizabeth, “All of Taylor Swift’s Album Eras and Their Distinctive Styles — Taylor Swift Midnights,” L’Officiel USA, Mar. 21, 2023.
+https://www.lofficielusa.com/pop-culture/every-taylor-swift-album-era-style
+
+[4]Stefan Feuerriegel, “SentimentAnalysis Vignette,” cran.r-project.org. 
+https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html
+
+[5]“Topic Modeling with R,” ladal.edu.au.
+https://ladal.edu.au/topicmodels.html
+‌
+‌
+‌
