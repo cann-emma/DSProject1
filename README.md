@@ -9,16 +9,26 @@ Platforms: [Windows and Mac]
 
 ## Documentation Map:
 1. Data
+   
      **[Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_released.csv)**
+
+
      **[Clean Dataset]**
+
+
      **[Final Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv)**
    
-2. Scripts
+1. Scripts
+   
      **[Processing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-DataCleaning.R)**
+
+   
      **[Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-Analysis.R)**
+
+   
      **[Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyricAnalysis.R)**
    
-3. Output
+2. Output
 
 ## Reproducing Results
 To reproduce this work:
