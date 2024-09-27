@@ -1,0 +1,73 @@
+## EXPLORATORY DATA ANALYSIS
+
+library(tm)
+library(SnowballC)
+library(ggwordcloud)
+library(wordcloud)
+library(RColorBrewer)
+
+
+Swift_final<- read.csv("ts_discography_clean.csv")
+
+# Pre-Processing
+usableText<- function(x) stringr::str_replace_all(x, "[^[:graph:]]", " ")
+corpus<- Corpus(VectorSource(Swift_final$text))
+corpus<- tm_map(corpus, usableText)
+corpus<- tm_map(corpus, tolower)
+corpus<- tm_map(corpus, removePunctuation)
+corpus<- tm_map(corpus, removeNumbers)
+corpus<- tm_map(corpus, removeWords, stopwords("english"))
+
+dtm<- DocumentTermMatrix(corpus)
+dtm  
+# High sparsity means many words that are not high in frequency
+dtm1<- removeSparseTerms(dtm, sparse = 0.965)
+dtm1
+
+dtm.df<- as.data.frame(as.matrix(dtm1))
+
+
+# Create frequency and sort
+freq.dtm<- sort(colSums(dtm.df),decreasing = T)
+
+# Transform to dataframe
+freq.dat<- data.frame(word= names(freq.dtm), freq= freq.dtm)
+head(freq.dat, 10)
+
+# Most common words are like, know, just, don't and never.
+
+# What are the common words associated with? What words are likely to come before or after frequent words? 
+
+findAssocs(dtm1, "like", 0.30) # like associated with feels and snow
+findAssocs(dtm1, "know", 0.30) # know associated with changed and better
+findAssocs(dtm1, "never", 0.30) # never associated with street and walk
+findAssocs(dtm1, "love", 0.30) # love associated with free and came
+
+
+## Visualization
+freq.dat%>%ggplot(aes(label= word, size= freq, color= word))+geom_text_wordcloud_area()
+
+## What are the top 20 words in the lyrics? 
+
+freq.20<- freq.dat[1:20, ]
+
+ggplot(freq.20, aes(reorder(word, freq,), freq, fill = word))+ geom_col() + xlab(NULL) + coord_flip() + ylab("Frequency") 
++ theme(text = element_text(size = 15), axis.text.y = element_text(size = 10, angle = 45))
+
+
+# Histogram of year
+
+par(mar = c(10, 4, 4, 2) + 0.1, cex.axis = 0.6)
+hist(as.numeric(Swift_final$year),
+     breaks = seq(min(as.numeric(Swift_final$year)), max(as.numeric(Swift_final$year)), by = 1),
+     xlab = "Year",
+     ylab = "Count",
+     main = "Year Distribution",
+     xaxt = "n")
+axis(1, at = unique(as.numeric(Swift_final$year)), labels = unique(Swift_final$year), las = 2)
+## More songs in the recent years than previous years
+
+
+# Song Distribution by Album
+
+
