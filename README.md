@@ -15,15 +15,18 @@ This project was developed using R Studio (version 4.4.1), alongside several key
    
 1. Scripts
    
-     **[Processing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-DataCleaning.R)**
+     **[Data Cleaning Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-DataCleaning.R)**
 
    
-     **[Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-Analysis.R)**
+     **[Exploratory Data Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-EDA.R)**
+   
+
+     **[Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R)**
 
    
-     **[Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyricAnalysis.R)**
+     **[Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-MasterAnalysis.R)**
    
-2. Output
+3. Output
 
 ## Reproducing Results
 To reproduce this work:
