@@ -31,7 +31,7 @@ This project was developed using R Studio (version 4.4.1), alongside several key
 ## Reproducing Results
 To reproduce this work:
 
-- Download (R Studio)[https://cran.r-project.org/](version 4.4.1 or higher)
+- Download [R Studio](https://cran.r-project.org/)(version 4.4.1 or higher)
 
 - Install and load packages and all dependencies
 
