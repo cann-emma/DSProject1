@@ -31,15 +31,15 @@ This project was developed using R Studio (version 4.4.1), alongside several key
 ## Reproducing Results
 To reproduce this work:
 
-**Download R Studio(version 4.4.1 or higher)**
+Download R Studio(version 4.4.1 or higher)
 
-**Install and load packages and all dependencies**
+Install and load packages and all dependencies
 
-**Read in [Original Dataset](#Original Dataset) to be cleaned. Run [data cleaning script](#Data Cleaning Script) and save clean data to be used in Exploratory Data Analysis**
+Read in [Original Dataset](#Original Dataset) to be cleaned. Run [data cleaning script](#Data Cleaning Script) and save clean data to be used in Exploratory Data Analysis
 
-**Load in [Clean Dataset](#Clean Dataset), and run [Exploratory Data Analysis data script](#Exploratory Data Analysis Script).**
+Load in [Clean Dataset](#Clean Dataset), and run [Exploratory Data Analysis data script](#Exploratory Data Analysis Script)
 
-**Using clean data still, run [Analysis script](#Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script).**
+Using clean data still, run [Analysis script](#Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script)
 
 
 Preprocess data using tm package, and create document-term matrix setting sparsity to 0.965
