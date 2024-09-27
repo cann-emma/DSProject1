@@ -2,8 +2,8 @@ library(dplyr)
 
 # LOAD AND VIEW DATA
 
-ts_discography_released <- read_csv("ts_discography_released.csv")
-Swift_final<- ts_discography_released%>%select(category, song_title, song_lyrics, song_release_date)
+ts_discography_original <- read_csv("ts_discography_original.csv")
+Swift_final<- ts_discography_original%>%select(category, song_title, song_lyrics, song_release_date)
 glimpse(Swift_final)
 head(Swift_final)
 Swift_final<- Swift_final%>%rename(title= song_title, text= song_lyrics, date= song_release_date) # Rename columns
@@ -55,6 +55,6 @@ NAS<- Swift_final%>%select(1:5)%>%filter(category== 'Non-Album Songs')
 ## Bind the rows that contain unique songs into dataframe
 
 TSwift_clean <- rbind(Tswift, Fearless_08, Fearless_21, SpeakNow_10, SpeakNow_23, Red_12, Red_21, A1989, B1989, Reputation, Lover, Folklore, Evermore, Midnights, TTPD, NAS)
-write.csv(TSwift_clean, "TSwift_clean.csv")
+write.csv(TSwift_clean, "ts_discography_clean.csv")
 
 ## 266 obs in clean dataframe
