@@ -24,13 +24,15 @@ Additionally, Python and the Gemini API were integrated for more advanced topic 
    
 2. Scripts
    
-     - [Data Cleaning Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-DataCleaning.R)
+     - [Data Cleaning Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/01_TSwift-DataCleaning.R)
 
    
-     - [Exploratory Data Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-EDA.R)
+     - [Exploratory Data Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/02_TSwift-EDA.R)
    
 
-     - [Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R)
+     - [Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_TSwift-Analysis.R)
+  
+     - [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py)
 
    
      - [Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-MasterAnalysis.R)
