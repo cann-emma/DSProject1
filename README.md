@@ -5,7 +5,7 @@ This project was developed using R Studio (version 4.4.1), alongside several key
 ## Documentation Map
 1. Data
    
-     **[Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_original.csv)**
+     ** **[Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_original.csv)**
 
 
      **[Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv)**
