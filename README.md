@@ -4,10 +4,10 @@ This project was developed using R Studio (v4.4.1) and includes key functionalit
 
 - dplyr, readr: Data manipulation and cleaning
 - tm, tidytext: Text mining
-- SentimentAnalysis, transforEmotion: Sentiment and emotion analysis
 - topicmodels: Topic modeling
 - ggplot2, ggwordcloud: Data visualization
-- ggpubr: Significance Testing 
+- ggpubr: Significance Testing
+- SentimentAnalysis, transforEmotion: Sentiment and emotion analysis
 
 Additionally, Python and the Gemini API were integrated for more advanced topic modeling tasks. This project was designed and runs on both Windows and Mac.
 
