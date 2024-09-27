@@ -1,6 +1,6 @@
 ## Software and Platform
 
-This project was developed using R Studio (version 4.4.1), alongside several key packages: tm, SentimentAnalysis, transformEmotions, ggpubbr, topicmodels, tidytext, and dplyr to perform text mining, sentiment analysis, topic modeling, and data visualization. The project runs on both Windows and Mac platforms.
+This project was developed using R Studio (version 4.4.1), alongside several key packages: dplyr, readr, tm, ggwordcloud, SentimentAnalysis, topicmodels, tidytext, ggplot2, transforEmotion, and ggpubr to perform data cleaning, text mining, sentiment analysis, topic modeling, significance testing and data visualization. Python alongside the Gemini API were used in the topic modeling portion of project. The project runs on both Windows and Mac platforms.
 
 ## Documentation Map
 1. Data
@@ -30,10 +30,17 @@ This project was developed using R Studio (version 4.4.1), alongside several key
 
 ## Reproducing Results
 To reproduce this work:
-Download R Studio(version 4.4.1 or higher)
 
-Install packages(listed above) and load packages 
-Perform Exploratory Data Analysis 
+**Download R Studio(version 4.4.1 or higher)**
+
+**Install and load packages and all dependencies**
+
+**Read in original dataset(##Original Dataset) to be cleaned. Run data cleaning script(##Data Cleaning Script) and save clean data to be used in Exploratory Data Analysis**
+
+**Load in clean data(##Clean Dataset), and run Exploratory Data Analysis data script(##Exploratory Data Analysis Script).**
+
+**Using clean data still, run Analysis script(## Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script).**
+
 
 Preprocess data using tm package, and create document-term matrix setting sparsity to 0.965
 
