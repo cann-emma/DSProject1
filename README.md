@@ -47,7 +47,7 @@ To reproduce this work:
 
 - Download [R Studio](https://cran.r-project.org/)(version 4.4.1 or higher)
   
-- Fork then clone this repository in terminal
+- Fork, then clone this repository in terminal of workspace
 
 - Install and load packages and all dependencies
 
