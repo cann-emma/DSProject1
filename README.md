@@ -1,6 +1,14 @@
 ## Software and Platform
 
-This project was developed using R Studio (version 4.4.1), alongside several key packages: dplyr, readr, tm, ggwordcloud, SentimentAnalysis, topicmodels, tidytext, ggplot2, transforEmotion, and ggpubr to perform data cleaning, text mining, sentiment analysis, topic modeling, significance testing and data visualization. Python alongside the Gemini API were used in the topic modeling portion of project. The project runs on both Windows and Mac platforms.
+This project was developed using R Studio (v4.4.1) and includes key functionalities such as data cleaning, text mining, sentiment analysis, topic modeling, statistical significance testing, and data visualization.A range of R packages were used to achieve these tasks:
+
+- dplyr, readr: Data manipulation and cleaning
+- tm, tidytext: Text mining
+- SentimentAnalysis, transforEmotion: Sentiment and emotion analysis
+- topicmodels: Topic modeling
+- ggplot2, ggpubr, ggwordcloud: Data visualization
+- 
+Additionally, Python and the Gemini API were integrated for more advanced topic modeling tasks. This project was designed and runs on both Windows and Mac.
 
 ## Documentation Map
 1. Data
@@ -27,6 +35,8 @@ This project was developed using R Studio (version 4.4.1), alongside several key
      - [Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-MasterAnalysis.R)
    
 3. Output
+
+   - [Output Files](https://github.com/cann-emma/DSProject1/tree/main/output)
 
 ## Reproducing Results
 To reproduce this work:
