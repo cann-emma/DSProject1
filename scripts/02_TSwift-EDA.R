@@ -69,5 +69,17 @@ axis(1, at = unique(as.numeric(Swift_final$year)), labels = unique(Swift_final$y
 
 
 # Song Distribution by Album
+ggplot(Swift, aes(x = category)) + 
+  geom_bar(fill = "lightblue", color = "black") + 
+  labs(x = "Album", y = "Number of Songs", title = "Number of Songs per Album") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 8), 
+        plot.margin = margin(50, 10, 10, 10),  # Increase bottom margin for more space
+        plot.title = element_text(size = 10, hjust = 0.5), 
+        axis.title = element_text(size = 9)) + 
+  scale_y_continuous(expand = expansion(mult = c(0, 0.05)), 
+                     limits = c(0, max(table(Swift$category)) * 0.7),  # Shorten y-axis by reducing the limit
+                     breaks = pretty(0:max(table(Swift$category)), n = 5)) + 
+  theme(panel.grid.major.x = element_blank(), 
+        panel.grid.minor = element_blank())
 
 
