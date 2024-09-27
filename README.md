@@ -35,9 +35,9 @@ To reproduce this work:
 
 **Install and load packages and all dependencies**
 
-**Read in [original dataset](#Original Dataset) to be cleaned. Run [data cleaning script](#Data Cleaning Script) and save clean data to be used in Exploratory Data Analysis**
+**Read in [Original Dataset](#Original Dataset) to be cleaned. Run [data cleaning script](#Data Cleaning Script) and save clean data to be used in Exploratory Data Analysis**
 
-**Load in [clean data](#Clean Dataset), and run [Exploratory Data Analysis data script](#Exploratory Data Analysis Script).**
+**Load in [Clean Dataset](#Clean Dataset), and run [Exploratory Data Analysis data script](#Exploratory Data Analysis Script).**
 
 **Using clean data still, run [Analysis script](#Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script).**
 
