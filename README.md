@@ -1,6 +1,6 @@
 ## Software and Platform
 
-This project was developed using R Studio (v4.4.1) and includes key functionalities such as data cleaning, text mining, sentiment analysis, topic modeling, statistical significance testing, and data visualization.A range of R packages were used to achieve these tasks:
+This project was developed using R Studio (version 4.4.1) and includes key functionalities such as data cleaning, text mining, sentiment analysis, topic modeling, statistical significance testing, and data visualization.A range of R packages were used to achieve these tasks:
 
 - dplyr, readr: Data manipulation and cleaning
 - tm, tidytext: Text mining
