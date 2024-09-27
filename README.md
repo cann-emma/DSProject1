@@ -1,36 +1,46 @@
 ## Software and Platform
 
-This project was developed using R Studio (version 4.4.1), alongside several key packages: tm, SentimentAnalysis, transformEmotions, ggpubbr, topicmodels, tidytext, and dplyr to perform text mining, sentiment analysis, topic modeling, and data visualization. The project runs on both Windows and Mac platforms.
+This project was developed using R Studio (version 4.4.1), alongside several key packages: dplyr, readr, tm, ggwordcloud, SentimentAnalysis, topicmodels, tidytext, ggplot2, transforEmotion, and ggpubr to perform data cleaning, text mining, sentiment analysis, topic modeling, significance testing and data visualization. Python alongside the Gemini API were used in the topic modeling portion of project. The project runs on both Windows and Mac platforms.
 
 ## Documentation Map
 1. Data
    
-     **[Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_original.csv)** 
+     - [Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_original.csv) 
 
 
-     **[Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv)**
+     - [Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv)
 
 
-     **[Final Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_final.csv)**
+     - [Final Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_final.csv)
    
-1. Scripts
+2. Scripts
    
-     **[Processing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-DataCleaning.R)**
-
-   
-     **[Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyric-Analysis.R)**
+     - [Data Cleaning Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-DataCleaning.R)
 
    
-     **[Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwiftLyricAnalysis.R)**
+     - [Exploratory Data Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-EDA.R)
    
-2. Output
+
+     - [Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R)
+
+   
+     - [Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-MasterAnalysis.R)
+   
+3. Output
 
 ## Reproducing Results
 To reproduce this work:
-Download R Studio(version 4.4.1 or higher)
 
-Install packages(listed above) and load packages 
-Perform Exploratory Data Analysis 
+- Download [R Studio](https://cran.r-project.org/)(version 4.4.1 or higher)
+
+- Install and load packages and all dependencies
+
+- Read in [Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_original.csv) to be cleaned. Run [Data Cleaning script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-DataCleaning.R) and save clean data to be used in Exploratory Data Analysis
+
+- Load in [Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv), and run [Exploratory Data Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-EDA.R)
+
+- Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R)
+
 
 Preprocess data using tm package, and create document-term matrix setting sparsity to 0.965
 
