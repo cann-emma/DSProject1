@@ -2,12 +2,12 @@
 
 This project was developed using R Studio (v4.4.1) and includes key functionalities such as data cleaning, text mining, sentiment analysis, topic modeling, statistical significance testing, and data visualization.A range of R packages were used to achieve these tasks:
 
-- dplyr, readr: Data manipulation and cleaning
-- tm, tidytext: Text mining
-- topicmodels: Topic modeling
-- ggplot2, ggwordcloud: Data visualization
-- ggpubr: Significance Testing
-- SentimentAnalysis, transforEmotion: Sentiment and emotion analysis
+- **dplyr, readr**: Data manipulation and cleaning
+- **tm, tidytext**: Text mining
+- **topicmodels**: Topic modeling
+- **ggplot2, ggwordcloud**: Data visualization
+- **ggpubr**: Significance Testing
+- **SentimentAnalysis, transforEmotion**: Sentiment and emotion analysis
 
 Additionally, Python and the Gemini API were integrated for more advanced topic modeling tasks. This project was designed and runs on both Windows and Mac.
 
@@ -78,10 +78,10 @@ https://blog.earlychirp.com/taylor-swift-lyrics-58ae00d30a29
 [3] S. Elizabeth, “All of Taylor Swift’s Album Eras and Their Distinctive Styles — Taylor Swift Midnights,” L’Officiel USA, Mar. 21, 2023.
 https://www.lofficielusa.com/pop-culture/every-taylor-swift-album-era-style
 
-[4]Stefan Feuerriegel, “SentimentAnalysis Vignette,” cran.r-project.org. 
+[4] Stefan Feuerriegel, “SentimentAnalysis Vignette,” cran.r-project.org. 
 https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html
 
-[5]“Topic Modeling with R,” ladal.edu.au.
+[5] “Topic Modeling with R,” ladal.edu.au.
 https://ladal.edu.au/topicmodels.html
 ‌
 ‌
