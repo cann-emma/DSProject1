@@ -40,11 +40,14 @@ Additionally, Python and the Gemini API were integrated for more advanced topic 
 3. Output
 
    - [Output Files](https://github.com/cann-emma/DSProject1/tree/main/output)
+     
 
 ## Reproducing Results
 To reproduce this work:
 
 - Download [R Studio](https://cran.r-project.org/)(version 4.4.1 or higher)
+  
+- Fork then clone this repository in terminal
 
 - Install and load packages and all dependencies
 
@@ -52,9 +55,10 @@ To reproduce this work:
 
 - Load in [Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv), and run [Exploratory Data Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-EDA.R)
 
-- Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R)
+- Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R). Run [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py) after performing topic modeling, grouping tokens by topics(1-5), and writing out beta_top2.
 
-**Or:** clone this repository and follow steps above
+- Run remaining Analysis code after topic modeling. This should be zero-shot classification and onward. 
+
 
 
 ## References
