@@ -55,7 +55,7 @@ To reproduce this work:
 
 - Load in [Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv), and run [Exploratory Data Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-EDA.R)
 
-- Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R). Run [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py) after performing topic modeling, grouping tokens by topics(1-5), and writing out beta_top2
+- Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R). Run [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py) using [sorted beta dataframe](https://github.com/cann-emma/DSProject1/blob/main/data/ts_topics.csv)
 
 - Run remaining Analysis code after topic modeling. This should be zero-shot classification and onward. 
 
