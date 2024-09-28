@@ -2,12 +2,14 @@ library(dplyr)
 
 # LOAD AND VIEW DATA
 
-ts_discography_original <- read_csv("ts_discography_original.csv")
-Swift_final<- ts_discography_original%>%select(category, song_title, song_lyrics, song_release_date)
-glimpse(Swift_final)
-head(Swift_final)
+ts_discography_original <- read_csv("ts_discography_original.csv") # Load data
+Swift_final<- ts_discography_original%>%select(category, song_title, song_lyrics, song_release_date) # Select variables of interest
+glimpse(Swift_final) # See the variables in and variable type of dataframe
+head(Swift_final) # Get the top five rows of dataframe
 Swift_final<- Swift_final%>%rename(title= song_title, text= song_lyrics, date= song_release_date) # Rename columns
 Swift_final$year<- substr(Swift_final$date, 1, 4) # Select year from date
+max(Swift_final$year) #2024
+min(Swift_final$year) #2006
 
 unique(Swift_final$category) # What are the different categories/albums in the dataset?
 
