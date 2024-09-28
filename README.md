@@ -47,7 +47,7 @@ To reproduce this work:
 
 - Download [R Studio](https://cran.r-project.org/)(version 4.4.1 or higher)
   
-- Fork, then clone this repository in terminal of workspace
+- Fork this repository, then clone forked repository in terminal of workspace
 
 - Install and load packages and all dependencies
 
@@ -55,11 +55,11 @@ To reproduce this work:
 
 - Load in [Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv), and run [Exploratory Data Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-EDA.R)
 
-- Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R). Run [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py) using [sorted beta dataframe](https://github.com/cann-emma/DSProject1/blob/main/data/ts_topics.csv)
+- Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R). Before zero-shot classification, run [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py) using [sorted beta dataframe](https://github.com/cann-emma/DSProject1/blob/main/data/ts_topics.csv)
 
 - Run remaining Analysis code after topic modeling. This should be zero-shot classification and onward. 
 
-
+**Note:** As a generative AI tool, the response generated after running python script may vary.
 
 ## References
 
