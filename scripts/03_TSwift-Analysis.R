@@ -12,8 +12,8 @@ Swift_final<- read.csv("ts_discography_clean.csv")
 
 # SENTIMENT ANALYSIS
 
-sentiment<- analyzeSentiment(Swift_final$text)
-Swift_final<- cbind(Swift_final, sentiment)
+sentiment<- analyzeSentiment(Swift_final$text) #Perform sentiment analysis on text column
+Swift_final<- cbind(Swift_final, sentiment) # bind columns from sentiment dataframe to current dataframe
 
 
 ## TOPIC MODELING
@@ -39,21 +39,21 @@ write.csv(beta_top2, "ts_topics.csv")
 # GEMINI API AND PYTHON
 # Python was used for this section
 
-import google.generativeai as genai
+import google.generativeai as genai  # Import all libraries and dependencies
 import numpy as np
 import pandas as pd
 
-topics= pd.read_csv("ts_topics.csv")
+topics= pd.read_csv("ts_topics.csv") # Load in dataframe from topic modeling
 topics
 
-genai.configure(api_key= GOOGLE_API_KEY)
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+genai.configure(api_key= GOOGLE_API_KEY) # Connect to gemini api using key
+model = genai.GenerativeModel(model_name="gemini-1.5-flash") # Choose model of gemini to work with
 
-topics_str= topics.to_string()
+topics_str= topics.to_string() # Convert values in topics to string
 print(topics_str)
 
-response = model.generate_content(["What theme or category best describes each topic in this dataframe? What specific emotions or subjects are these themes related to?", topics_str])
-print(response.text)
+response = model.generate_content(["What theme or category best describes each topic in this dataframe? What specific emotions or subjects are these themes related to?", topics_str]) # Prompt gemini
+print(response.text) # Print response for prompt
 
 
 # Here's a breakdown of the themes and emotions associated with each topic in your dataframe:
@@ -138,7 +138,7 @@ mean_Loss<- compare_means(Love~ year, Swift_final,method = "wilcox.test")
 
 
 ## What years show significant differences when compared with each other?
-sig_QDAP<- mean_QDAP%>%select(2, 3, 6, 7)%>%filter(p.signif %in% c('*','**','***'))
+sig_QDAP<- mean_QDAP%>%select(2, 3, 6, 7)%>%filter(p.signif %in% c('*','**','***')) # Select only years where there were significant results for each sentiment and emotional theme
 sig_Love<- mean_Love%>%select(2, 3, 6, 7)%>%filter(p.signif %in% c('*','**','***'))
 sig_Sorrow<- mean_Sorrow%>%select(2, 3, 6, 7)%>%filter(p.signif %in% c('*','**','***'))
 sig_Hope<- mean_Hope%>%select(2, 3, 6, 7)%>%filter(p.signif %in% c('*','**','***'))
