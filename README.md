@@ -57,9 +57,9 @@ To reproduce this work:
 
 - Using clean data still, run [Analysis script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-Analysis.R). Before zero-shot classification, run [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py) using [sorted beta dataframe](https://github.com/cann-emma/DSProject1/blob/main/data/ts_topics.csv)
 
-- Run remaining Analysis code after topic modeling. This should be zero-shot classification and onward. 
+- Run remaining Analysis code after topic modeling. This should be zero-shot classification and onward
 
-**Note:** As a generative AI tool, the response generated after running python script may vary.
+**Note:** Using a generative AI tool, the response generated after running python and gemini api script may vary
 
 ## References
 
