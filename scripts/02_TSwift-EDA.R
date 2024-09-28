@@ -6,8 +6,10 @@ library(ggwordcloud)
 library(wordcloud)
 library(RColorBrewer)
 
-
-Swift_final<- read.csv("ts_discography_clean.csv") # Load clean data
+# Load and glimpse at clean data
+Swift_final<- read.csv("ts_discography_clean.csv") 
+glimpse(Swift_final)
+unique(Swift_final$category) # What albums are in new dataframe
 
 # Pre-Processing
 usableText<- function(x) stringr::str_replace_all(x, "[^[:graph:]]", " ") # Function to keep only visible text
