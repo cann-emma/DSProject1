@@ -69,15 +69,17 @@ https://www.youtube.com/watch?v=3ozjwHWf-6E (accessed Sep. 26, 2024).
 [2] Early Chirp, “Exploring the Evolution of Taylor Swift Lyrics | Early Chirp | Medium,” Medium, May 06, 2024.
 https://blog.earlychirp.com/taylor-swift-lyrics-58ae00d30a29
 
-[3]“Gemini API | Google AI Studio | Google for Developers  |  Google AI for Developers,” Google AI for Developers, 2024. https://ai.google.dev/gemini-api?gad_source=5&gclid=EAIaIQobChMI5P-c_LTeiAMVMlFHAR3y3DCEEAAYASAAEgJVCvD_BwE (accessed Sep. 27, 2024).
+[3] “Gemini API | Google AI Studio | Google for Developers  |  Google AI for Developers,” Google AI for Developers, 2024. https://ai.google.dev/gemini-api?gad_source=5&gclid=EAIaIQobChMI5P-c_LTeiAMVMlFHAR3y3DCEEAAYASAAEgJVCvD_BwE (accessed Sep. 27, 2024).
+
+[4] M. Clark, “Taylor Swift - Released Song Discography (Genius),” Kaggle.com, 2024. https://www.kaggle.com/datasets/madroscla/taylor-swift-released-song-discography-genius (accessed Sep. 29, 2024).
 ‌
-[4] S. Elizabeth, “All of Taylor Swift’s Album Eras and Their Distinctive Styles — Taylor Swift Midnights,” L’Officiel USA, Mar. 21, 2023.
+[5] S. Elizabeth, “All of Taylor Swift’s Album Eras and Their Distinctive Styles — Taylor Swift Midnights,” L’Officiel USA, Mar. 21, 2023.
 https://www.lofficielusa.com/pop-culture/every-taylor-swift-album-era-style
 
-[5] Stefan Feuerriegel, “SentimentAnalysis Vignette,” cran.r-project.org. 
+[6] Stefan Feuerriegel, “SentimentAnalysis Vignette,” cran.r-project.org. 
 https://cran.r-project.org/web/packages/SentimentAnalysis/vignettes/SentimentAnalysis.html
 
-[5] “Topic Modeling with R,” ladal.edu.au.
+[7] “Topic Modeling with R,” ladal.edu.au.
 https://ladal.edu.au/topicmodels.html
 ‌
 ‌
