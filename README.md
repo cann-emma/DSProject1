@@ -73,6 +73,7 @@ https://blog.earlychirp.com/taylor-swift-lyrics-58ae00d30a29
 
 [4] M. Clark, “Taylor Swift - Released Song Discography (Genius),” Kaggle.com, 2024. https://www.kaggle.com/datasets/madroscla/taylor-swift-released-song-discography-genius (accessed Sep. 29, 2024).
 ‌
+
 [5] S. Elizabeth, “All of Taylor Swift’s Album Eras and Their Distinctive Styles — Taylor Swift Midnights,” L’Officiel USA, Mar. 21, 2023.
 https://www.lofficielusa.com/pop-culture/every-taylor-swift-album-era-style
 
