@@ -3,7 +3,7 @@
 library(tm)
 library(SnowballC)
 library(ggwordcloud)
-library(wordcloud)
+library(wordcloud2)
 library(RColorBrewer)
 
 # Load and glimpse at clean data
@@ -53,8 +53,9 @@ freq.dat%>%ggplot(aes(label= word, size= freq, color= word))+geom_text_wordcloud
 
 freq.20<- freq.dat[1:20, ] # Select 20 rows from the frequency dataframe
 
-ggplot(freq.20, aes(reorder(word, freq,), freq, fill = word))+ geom_col() + xlab(NULL) + coord_flip() + ylab("Frequency") 
-+ theme(text = element_text(size = 15), axis.text.y = element_text(size = 10, angle = 45))
+freq<- freq.20%>%arrange(desc(freq.20))%>%head(20)
+colors <- c("#FF69B4", "#FFD700", "#00FA9A", "#00BFFF", "#FF6347", "#ADFF2F", "#FFA07A", "#7B68EE", "#FF4500", "#40E0D0")
+wordcloud2(freq, color= pretty_colors, backgroundColor = "white")
 
 
 # Year Distribution in dataframe
