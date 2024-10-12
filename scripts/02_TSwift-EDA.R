@@ -55,7 +55,7 @@ freq.20<- freq.dat[1:20, ] # Select 20 rows from the frequency dataframe
 
 freq<- freq.20%>%arrange(desc(freq.20))%>%head(20)
 colors <- c("#FF69B4", "#FFD700", "#00FA9A", "#00BFFF", "#FF6347", "#ADFF2F", "#FFA07A", "#7B68EE", "#FF4500", "#40E0D0")
-wordcloud2(freq, color= pretty_colors, backgroundColor = "white")
+wordcloud2(freq, color= colors, backgroundColor = "white")
 
 
 # Year Distribution in dataframe
