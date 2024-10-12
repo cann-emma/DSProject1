@@ -210,13 +210,33 @@ comparisons.listLs <- lapply(1:nrow(sig_Loss), function(i) {
 
 ## Visualize sentiment and topic significance by matched years
 
-ggviolin(QDAP_vis, x = "Year", y = "SentimentQDAP", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.list)
-ggviolin(Love_vis, x = "Year", y = "Love", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listL)
-ggviolin(Sorrow_vis, x = "Year", y = "Sorrow", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listS)
-ggviolin(Nostalgia_vis, x = "Year", y = "Nostalgia", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listN)
-ggviolin(Reflection_vis, x = "Year", y = "Reflection", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listR)
-ggviolin(Confidence_vis, x = "Year", y = "Confidence", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listC)
-ggviolin(Resilience_vis, x = "Year", y = "Resilience", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listRe)
-ggviolin(Hope_vis, x = "Year", y = "Hope", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listH)
-ggviolin(Desire_vis, x = "Year", y = "Desire", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listD)
-ggviolin(Loss_vis, x = "Year", y = "Loss", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+stat_compare_means(comparisons = comparisons.listLs)
+ggviolin(QDAP_vis, x = "Year", y = "SentimentQDAP", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.list, label = "p.signif")+theme(legend.position = "none")  
+
+ggviolin(Confidence_vis, x = "Year", y = "Confidence", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE),draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listC, label = "p.format", method = "wilcox.test",label.y = c(0.26, 0.3,0.31, 0.4)) +theme(legend.position = "none")
+
+ggviolin(Love_vis, x = "Year", y = "Love", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listL,label = "p.signif", method = "wilcox.test") +theme(legend.position = "none")
+
+ggviolin(Desire_vis, x = "Year", y = "Desire", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listD, label= "p.signif")+theme(legend.position = "none")
+
+ggviolin(Sorrow_vis, x = "Year", y = "Sorrow", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listS, label= "p.signif")+theme(legend.position = "none") 
+
+ggviolin(Nostalgia_vis, x = "Year", y = "Nostalgia", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listN, label= "p.signif", label.y= seq(0.45, 1, by= 0.05))+theme(legend.position = "none")
+
+ggviolin(Reflection_vis, x = "Year", y = "Reflection", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listR,label = "p.signif", method = "wilcox.test") +theme(legend.position = "none")
+
+ggviolin(Resilience_vis, x = "Year", y = "Resilience", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listRe, label= "p.signif", label.y= seq (0.35, 0.75, by= 0.05))+theme(legend.position = "none")
+
+ggviolin(Hope_vis, x = "Year", y = "Hope", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listH, label= "p.signif")+theme(legend.position = "none")
+
+ggviolin(Loss_vis, x = "Year", y = "Loss", color= "black", fill= "Year", add = c("boxplot"), add.params = list(jitter= TRUE), draw_quantiles = TRUE, alpha = 0.2)+
+stat_compare_means(comparisons = comparisons.listLs, label= "p.signif", label.y= seq(0.47, 0.65, by= 0.05))+theme(legend.position = "none")
+
