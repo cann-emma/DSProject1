@@ -1,3 +1,9 @@
+## Project Name and Introduction
+
+ Taylor Swift Lyrics Topic, Sentiment, and Emotional analysis 
+ Emmanuella Cann, Caroline Hagood, Maggie Welch 
+
+
 ## Software and Platform
 
 This project was developed using R Studio (version 4.4.1) and includes key functionalities such as data cleaning, text mining, sentiment analysis, topic modeling, statistical significance testing, and data visualization.A range of R packages were used to achieve these tasks:
@@ -11,35 +17,59 @@ This project was developed using R Studio (version 4.4.1) and includes key funct
 
 Additionally, Python and the Gemini API were integrated for more advanced topic modeling tasks. This project was designed and runs on both Windows and Mac.
 
+
 ## Documentation Map
+
+LICENSE
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/cann-emma/DSProject1/blob/main/LICENSE) file for details.
+
 1. Data
-   
-     - [Original Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_original.csv) 
-
-
-     - [Clean Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_clean.csv)
-
-
-     - [Final Dataset](https://github.com/cann-emma/DSProject1/blob/main/data/ts_discography_final.csv)
+   - Data Appendix File
+   - ts_discography_original.csv
+   - ts_discography_clean.csv
+   - ts_discography_final.csv
+   - ts_topics.csv
    
 2. Scripts
-   
-     - [Data Cleaning Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/01_TSwift-DataCleaning.R)
-
-   
-     - [Exploratory Data Analysis Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/02_TSwift-EDA.R)
-   
-
-     - [Sentiment and Topic Analysis, Zero Short Classification, and Significance Testing Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_TSwift-Analysis.R)
-  
-     - [Python and Gemini Api Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/03_gemini-api.py)
-
-   
-     - [Master Script](https://github.com/cann-emma/DSProject1/blob/main/scripts/TSwift-MasterAnalysis.R)
+   - Processing Scripts
+        - 01_TSwift-DataCleaning.R
+     
+   - Analysis Scripts
+        - 02__TSwift-EDA.R
+        - 03_TSwift-Analysis.R
+        - 03_gemini-api.py
+        - DataAppendixScript.R
+          
+   - Master Script
+      - TSwift-MasterAnalysis.R
    
 3. Output
-
-   - [Output Files](https://github.com/cann-emma/DSProject1/tree/main/output)
+   - Album_bar_cleandata.png
+   - Confidence_Density.png
+   - Confidence_Year_meancomp.jpeg
+   - Desire_Density.png
+   - Desire_Year_meancomp.jpeg
+   - Hope_Density.png
+   - Hope_Year_meancomp.jpeg
+   - Loss_Density.png
+   - Loss_Year_meancomp.jpeg
+   - Love_Density.png
+   - Love_Year_meancomp.jpeg
+   - Lyric_freq.png
+   - Nostalgia_Density.png
+   - Nostalgia_Year_meancomp.jpeg
+   - Reflection_Density.png
+   - Reflection_Year_meancomp.jpeg
+   - Resilience_Density.png
+   - Resilience_Year_meancomp.jpeg
+   - SDAP_Density.png
+   - SDAP_Year_meancomp.jpeg
+   - SignificanceResults.csv
+   - Song per Album.png
+   - Sorrow_Density.png
+   - Sorrow_Year_meancomp.jpeg
+   - Topics_plot.jpeg
+   - year_hist.png
      
 
 ## Reproducing Results
