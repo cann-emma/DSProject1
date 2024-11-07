@@ -1,6 +1,8 @@
-## Project Name and Introduction
+## Taylor Swift Lyrics Topic, Sentiment, and Emotional analysis 
 
- Taylor Swift Lyrics Topic, Sentiment, and Emotional analysis 
+This project aims to answer the question: Are there statistically significant differences(a=0.05, p<0.05) in the emotional themes and sentiments of Taylor Swift's lyrics over the years, reflecting changes as she has matured into adulthood?
+
+ 
  Emmanuella Cann, Caroline Hagood, Maggie Welch 
 
 
