@@ -1,6 +1,14 @@
 ## Taylor Swift Lyrics Topic, Sentiment, and Emotional analysis 
 
-This project aims to answer the question: Are there statistically significant differences(a=0.05, p<0.05) in the emotional themes and sentiments of Taylor Swift's lyrics over the years, reflecting changes as she has matured into adulthood?
+Song writing is a form of emotional expression, and often gives insight into the mindset of the artist. Taylor Swift is 
+arguably the largest female pop artist right now, and her ability to communicate her emotions into her songs is a huge
+reason why her predominantly female fan base loves her. Additionally, Swift has been putting out music since she was
+sixteen, and is still putting out music at the age of thirty-four. Through her robust discography, we want to perform a sentiment analysis to investigate whether there is a change in her songs’ emotions and sentiments and the topics she discusses as she has evolved from a teenage girl to an adult woman. 
+We hypothesize that the emotion and sentiment of Taylor Swift’s lyrics over the last two decades evolved from 
+happy to sad as her career progressed. We predict that as she grew up from a teenage country singer to a mature 
+artist, her lyrics will reflect this change topically and emotionally. This research question is relevant for audiences as 
+Taylor Swift is a prevalent figure in pop culture and has released eleven albums throughout her career that have earned 
+numerous awards.
 
  
  Emmanuella Cann, Caroline Hagood, Maggie Welch 
